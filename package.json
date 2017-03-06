@@ -1,13 +1,13 @@
 {
-    "name": "vscode-bad-code-highlighter",
-    "displayName": "Bad Code Highlighter",
+    "name": "vscode-bad-code-highlighter-2",
+    "displayName": "Bad Code Highlighter 2",
     "description": "Adds colored highlights to text matching regular expressions.",
-    "version": "0.1.6",
-    "publisher": "bhank",
+    "version": "0.1.7",
+    "publisher": "pr-yemibedu",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/bhank/vscode-bad-code-highlighter"
+        "url": "https://github.com/pr-yemibedu/vscode-bad-code-highlighter"
     },
     "engines": {
         "vscode": "0.10.x"
@@ -23,9 +23,9 @@
     "contributes": {
         "configuration": {
             "type": "object",
-            "title": "Bad Code Highlighter",
+            "title": "Bad Code Highlighter 2",
             "properties": {
-                "badCodeHighlighter.highlights": {
+                "badCodeHighlighter2.highlights": {
                     "type": "array",
                     "items": {
                         "type": "object",
@@ -39,9 +39,17 @@
                                 "type": "string",
                                 "description": "Regular expression to match text to highlight."
                             },
-                            "color": {
+                            "bcolor": {
                                 "type": "string",
-                                "description": "Color for highlighted text."
+                                "description": "Background Color for highlighted text."
+                            },
+                            "fcolor": {
+                                "type": "string",
+                                "description": "Foreground Color for highlighted text."
+                            },
+                            "dcolor": {
+                                "type": "string",
+                                "description": "Border Color for highlighted text."
                             },
                             "tooltip": {
                                 "type": "string",
@@ -64,7 +72,7 @@
                     ],
                     "description": "Items to highlight."
                 },
-                "badCodeHighlighter.updateTimeout": {
+                "badCodeHighlighter2.updateTimeout": {
                     "type": "integer",
                     "description": "Milliseconds to wait before updating highlights.",
                     "default": 250
