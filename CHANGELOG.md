@@ -1,3 +1,7 @@
+### 0.1.7 - 2017-03-07
+
+* Forked. Support for independent background, border, coloring.
+
 ### 0.1.6 - 2017-02-22
 
 * Lower default timeout to 250
